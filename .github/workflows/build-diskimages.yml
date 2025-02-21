@@ -1,6 +1,9 @@
 name: build diskimages (bootc)
 run-name: building diskimages (bootc)
+
 on:
+  schedule:
+    - cron: "0 0 */2 * *"
   workflow_dispatch:
 
 env:
