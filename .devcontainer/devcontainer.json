@@ -1,6 +1,6 @@
 {
     "name": "CentOS Go development environment",
-    "image": "ghcr.io/gbraad-devenv/centos-golang/code-cli:41",
+    "image": "ghcr.io/gbraad-devenv/centos-golang/code-cli:stream9",
     "runArgs": [ "--cap-add=NET_ADMIN", "--cap-add=NET_RAW", "--device=/dev/net/tun", "--device=/dev/fuse" ],
     "postStartCommand": ".github/install.sh",
 
@@ -12,6 +12,9 @@
         "vscode": {
             "extensions": [
                 "ms-vscode.Theme-TomorrowKit",
+                "ritwickdey.LiveServer",
+                "ms-toolsai.jupyter",
+                "ms-python.python"
             ]
         }
     }
